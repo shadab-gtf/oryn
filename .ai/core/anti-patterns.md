@@ -1,0 +1,52 @@
+# Absolute Anti-Pattern Bans
+
+NEVER:
+
+- use client inside page.tsx
+- use browser APIs during SSR
+- animate width
+- animate height
+- animate top
+- animate left
+- use unstable keys
+- use random() during SSR
+- use Date.now() during SSR
+- create render-loop allocations
+- instantiate arrays in render loops
+- instantiate objects in render loops
+- create giant JSX files
+- create deeply nested component trees
+- use inline anonymous render functions unnecessarily
+- create hydration mismatch risks
+- use layout thrashing animations
+- use excessive z-index stacking
+- use Tailwind utility spam
+- tightly couple UI and data
+- create motion systems without cleanup
+- instantiate GSAP timelines without revert()
+- use memory-leaking observers
+- use unoptimized images
+- block LCP assets behind animations
+- use excessive blur effects
+- use excessive backdrop-filter
+- create unbounded RAF loops
+- create scroll listeners without throttling
+- use excessive client-side rendering
+- duplicate state
+- use oversized global stores
+- fetch directly inside presentation components
+- mutate DOM directly
+- create unnecessary rerenders
+- use oversized dependency libraries
+- use inline styles for large systems
+- create inaccessible motion systems
+- ignore reduced motion preferences
+- create animation timelines globally
+- create global mutable state unnecessarily
+- use excessive absolute positioning
+- use hardcoded magic spacing values
+- use arbitrary typography scaling
+- create layout shifts during image loading
+- use autoplay-heavy video backgrounds without optimization
+- create nested ScrollTriggers recklessly
+- use unbounded parallax effects
