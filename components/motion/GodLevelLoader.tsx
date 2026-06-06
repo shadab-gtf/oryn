@@ -1,11 +1,27 @@
 "use client";
 
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import { useMotionGate } from "./MotionProvider";
 
 export function GodLevelLoader() {
   const { loaderComplete, setLoaderComplete } = useMotionGate();
   const completedRef = useRef(false);
+
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const checkMobile = () => {
+      setIsMobile(window.innerWidth < 768);
+    };
+
+    checkMobile();
+
+    window.addEventListener("resize", checkMobile);
+
+    return () => {
+      window.removeEventListener("resize", checkMobile);
+    };
+  }, []);
 
   useEffect(() => {
     if (loaderComplete) return;
@@ -15,7 +31,7 @@ export function GodLevelLoader() {
         completedRef.current = true;
         setLoaderComplete(true);
       }
-    }, 5200);
+    }, 8000);
 
     return () => window.clearTimeout(fallback);
   }, [loaderComplete, setLoaderComplete]);
@@ -33,13 +49,17 @@ export function GodLevelLoader() {
     <div className="fixed inset-0 z-[9999] overflow-hidden bg-[#0B0B0B]">
       <video
         autoPlay
-        className="h-full w-full object-cover"
         muted
-        onEnded={completeLoader}
-        onError={completeLoader}
         playsInline
         preload="auto"
-        src="/videos/loader.mp4"
+        onEnded={completeLoader}
+        onError={completeLoader}
+        className="absolute inset-0 h-full w-full object-cover"
+        src={
+          isMobile
+            ? "/videos/mobile.mp4"
+            : "/videos/loader-desktop.mp4"
+        }
       />
     </div>
   );
