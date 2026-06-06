@@ -31,7 +31,7 @@ export function GodLevelLoader() {
         completedRef.current = true;
         setLoaderComplete(true);
       }
-    }, 8000);
+    }, 10000);
 
     return () => window.clearTimeout(fallback);
   }, [loaderComplete, setLoaderComplete]);
