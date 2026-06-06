@@ -24,6 +24,6 @@ export async function createInquiry(
   return {
     ok: true,
     message:
-      "Your inquiry has been received. ORYN will respond with a considered next step.",
+      "Your consultation request has been received. SS Interior will respond with a considered atelier next step.",
   };
 }

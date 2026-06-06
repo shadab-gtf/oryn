@@ -10,8 +10,8 @@ import { SectionShell } from "@/components/ui/SectionShell";
 import type { EditorialBlock } from "@/types/content";
 
 const intelligenceMedia = {
-  src: "/media/spatial-intelligence.jpg",
-  alt: "A quiet architectural interior with stone, glass, and controlled natural light",
+  src: "/media/ss-material-collection.png",
+  alt: "A luxury upholstery worktable with leather, textile swatches, and hand-finished detailing",
   width: 1800,
   height: 1200,
 };
@@ -94,9 +94,9 @@ export function SpatialIntelligenceSection({
         <div ref={containerRef} data-speed="1.05" className="grid items-center gap-12 lg:grid-cols-[0.95fr_1.05fr] lg:gap-24 w-full">
           
           <div className="order-2 lg:order-1 w-full relative group">
-            {/* 2050 Technical Accents */}
+            {/* Atelier process accent */}
             <div className="absolute -left-8 top-1/2 -translate-y-1/2 text-[9px] tracking-[0.3em] text-stone-400 rotate-180 origin-center font-mono opacity-50" style={{ writingMode: 'vertical-rl' }}>
-              SPATIAL_INT // 002.4
+              RESTORE // 01-04
             </div>
             
             <motion.div 

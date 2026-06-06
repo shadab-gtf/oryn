@@ -22,7 +22,7 @@ export default function ErrorPage({ error, unstable_retry }: ErrorPageProps) {
           The experience paused unexpectedly.
         </Heading>
         <p className="mt-6 text-base leading-8 text-ivory-050/70">
-          The page can be requested again without leaving this private viewing.
+          The page can be requested again without leaving this atelier visit.
         </p>
         <Button className="mt-8" type="button" onClick={unstable_retry}>
           Try again

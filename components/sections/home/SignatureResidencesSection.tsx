@@ -18,16 +18,16 @@ export async function SignatureResidencesSection({
   const properties = await propertiesPromise;
 
   return (
-    <SectionShell id="signature-residences" tone="void">
+    <SectionShell id="signature-transformations" tone="void">
       <Container>
         <div data-speed="0.98">
           <div className="mb-20 grid gap-8 lg:grid-cols-[0.85fr_1.15fr] lg:items-end">
             <div>
-              <Eyebrow>Signature Residences</Eyebrow>
+              <Eyebrow>Signature Transformations</Eyebrow>
             </div>
             <div>
               <Heading>
-                A curated view into places made for lasting attention.
+                A curated view into furniture renewed with heritage, material intelligence, and restraint.
               </Heading>
             </div>
           </div>
@@ -69,7 +69,7 @@ export async function SignatureResidencesSection({
 
           <div className="mt-20">
             <Button href="/showcase" variant="secondary">
-              Explore the collection
+              Explore the transformation gallery
             </Button>
           </div>
         </div>
@@ -80,7 +80,7 @@ export async function SignatureResidencesSection({
 
 export function SignatureResidencesSkeleton() {
   return (
-    <SectionShell id="signature-residences" tone="void">
+    <SectionShell id="signature-transformations" tone="void">
       <Container>
         <div className="mb-20 grid gap-8 lg:grid-cols-[0.85fr_1.15fr]">
           <Skeleton className="h-4 w-48" />

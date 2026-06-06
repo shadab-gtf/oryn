@@ -3,9 +3,9 @@ import { PrivateInquiryPageSection } from "@/components/sections/private-inquiry
 import { buildMetadata } from "@/lib/seo/metadata";
 
 export const metadata: Metadata = buildMetadata({
-  title: "Private Inquiry | ORYN",
+  title: "Restoration Consultation | SS Interior",
   description:
-    "Begin a discreet conversation about a luxury residence, development launch, or architectural digital experience.",
+    "Request a private SS Interior consultation for luxury sofa restoration, bespoke upholstery, leather renewal, and heritage furniture transformation.",
   path: "/private-inquiry",
 });
 

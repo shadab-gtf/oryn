@@ -4,9 +4,9 @@ import { getMarkets } from "@/lib/api/markets";
 import { buildMetadata } from "@/lib/seo/metadata";
 
 export const metadata: Metadata = buildMetadata({
-  title: "Global Presence | ORYN Luxury Real Estate Markets",
+  title: "Homes, Hotels & Commercial Spaces | SS Interior",
   description:
-    "Luxury real estate digital experiences for Dubai, Monaco, London, Los Angeles, Shanghai, New York, Jeddah, and Berlin.",
+    "Luxury furniture restoration and bespoke upholstery for refined homes, villas, hotels, restaurants, corporate offices, and interior designers.",
   path: "/global-presence",
 });
 

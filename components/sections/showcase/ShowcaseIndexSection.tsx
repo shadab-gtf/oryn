@@ -17,18 +17,18 @@ export function ShowcaseIndexSection({ properties }: ShowcaseIndexSectionProps) 
       <Container>
         <div className="max-w-4xl">
           <Reveal>
-            <Eyebrow>Exclusive Collection</Eyebrow>
+            <Eyebrow>Transformation Gallery</Eyebrow>
           </Reveal>
           <Reveal delay={0.08}>
             <Heading as="h1" variant="title" className="mt-6">
-              Residences presented as spatial narratives, not inventory.
+              Furniture transformations presented as craft studies, not service listings.
             </Heading>
           </Reveal>
           <Reveal delay={0.16}>
             <p className="mt-8 max-w-2xl text-fluid-lead leading-9 text-ivory-050/70">
-              A selective showcase of private residences, penthouses, and
-              architectural property experiences shaped through cinematic
-              pacing and editorial restraint.
+              A selective gallery of heritage sofas, leather seating, velvet
+              upholstery, and designer pieces renewed through material
+              judgment, hand craftsmanship, and editorial restraint.
             </p>
           </Reveal>
         </div>
@@ -56,7 +56,7 @@ export function ShowcaseIndexSection({ properties }: ShowcaseIndexSectionProps) 
                     {property.summary}
                   </p>
                   <span className="mt-8 inline-block border-b border-bronze-300 pb-1 text-sm text-ivory-050">
-                    View the residence
+                    View the transformation
                   </span>
                 </div>
               </TransitionLink>

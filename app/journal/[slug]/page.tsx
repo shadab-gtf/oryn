@@ -28,14 +28,14 @@ export async function generateMetadata({
 
   if (!article) {
     return buildMetadata({
-      title: "Journal Article Not Found | ORYN",
-      description: "The requested ORYN journal article could not be found.",
+      title: "Journal Article Not Found | SS Interior",
+      description: "The requested SS Interior journal article could not be found.",
       path: `/journal/${slug}`,
     });
   }
 
   return buildMetadata({
-    title: `${article.title} | ORYN Journal`,
+    title: `${article.title} | SS Interior Journal`,
     description: article.excerpt,
     path: `/journal/${article.slug}`,
   });
@@ -64,13 +64,14 @@ export default async function JournalArticlePage({
         </p>
         <div className="mt-14 border-t border-void-950/12 pt-8 text-base leading-8 text-stone-700">
           <p>
-            ORYN treats every digital property experience as an architectural
-            sequence: a measured arrival, a controlled reveal of spatial context,
-            and a discreet path toward private conversation.
+            SS Interior treats every transformation as a sequence of respect:
+            understanding the original piece, selecting the right material, and
+            refining each surface until it belongs naturally to its next life.
           </p>
           <p className="mt-6">
-            The goal is not to simulate spectacle. The goal is to preserve the
-            emotional intelligence of a place when it moves through a screen.
+            The goal is not to make furniture feel newly anonymous. The goal is
+            to preserve memory while returning comfort, proportion, and material
+            confidence.
           </p>
         </div>
       </Container>

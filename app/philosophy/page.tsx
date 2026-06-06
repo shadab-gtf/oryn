@@ -3,9 +3,9 @@ import { PhilosophyPageSection } from "@/components/sections/philosophy/Philosop
 import { buildMetadata } from "@/lib/seo/metadata";
 
 export const metadata: Metadata = buildMetadata({
-  title: "Philosophy | ORYN Architectural Digital Storytelling",
+  title: "Philosophy | SS Interior Restoration Atelier",
   description:
-    "ORYN's philosophy for cinematic luxury real estate experiences, spatial storytelling, and architectural digital narratives.",
+    "SS Interior's philosophy for respecting original furniture, preserving heritage, selecting exceptional materials, and restoring luxury through craftsmanship.",
   path: "/philosophy",
 });
 

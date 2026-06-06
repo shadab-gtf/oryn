@@ -25,14 +25,14 @@ export async function generateMetadata({
 
   if (!property) {
     return buildMetadata({
-      title: "Residence Not Found | ORYN",
-      description: "The requested ORYN residence experience could not be found.",
+      title: "Transformation Not Found | SS Interior",
+      description: "The requested SS Interior transformation study could not be found.",
       path: `/showcase/${slug}`,
     });
   }
 
   return buildMetadata({
-    title: `${property.title} | ${property.market} Architectural Residence | ORYN`,
+    title: `${property.title} | ${property.market} Transformation | SS Interior`,
     description: property.summary,
     path: `/showcase/${property.slug}`,
     image: property.hero.src,

@@ -73,7 +73,7 @@ export function MobileNavigation({ items }: MobileNavigationProps) {
             href="/private-inquiry"
             onNavigate={() => setOpen(false)}
           >
-            Private Inquiry
+            Restoration Consultation
           </TransitionLink>
         </nav>
       </div>

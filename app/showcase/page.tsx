@@ -4,9 +4,9 @@ import { getProperties } from "@/lib/api/properties";
 import { buildMetadata } from "@/lib/seo/metadata";
 
 export const metadata: Metadata = buildMetadata({
-  title: "Showcase | ORYN Luxury Property Experiences",
+  title: "Transformation Gallery | SS Interior",
   description:
-    "A curated collection of cinematic luxury property experiences and architectural real estate presentations.",
+    "A curated collection of luxury sofa restorations, bespoke upholstery transformations, leather renewals, and heritage furniture studies.",
   path: "/showcase",
 });
 

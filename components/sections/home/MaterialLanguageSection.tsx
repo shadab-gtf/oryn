@@ -7,8 +7,8 @@ import { SectionShell } from "@/components/ui/SectionShell";
 import type { EditorialBlock } from "@/types/content";
 
 const materialMedia = {
-  src: "/media/home-detail.jpg",
-  alt: "A refined interior detail showing warm stone, timber, and soft architectural shadow",
+  src: "/media/ss-material-collection.png",
+  alt: "Premium upholstery materials with leather, velvet, linen, and refined wood finish details",
   width: 1200,
   height: 1800,
 };

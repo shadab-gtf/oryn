@@ -18,7 +18,7 @@ export type Property = {
   market: string;
   location: string;
   typology: string;
-  status: "Private preview" | "By appointment" | "Concept narrative";
+  status: "Atelier review" | "By appointment" | "Transformation study";
   summary: string;
   hero: MediaAsset;
   metrics: PropertyMetric[];

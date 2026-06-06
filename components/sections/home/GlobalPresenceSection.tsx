@@ -21,11 +21,11 @@ export async function GlobalPresenceSection({
         <div data-speed="1.1" className="grid gap-10 lg:grid-cols-[0.8fr_1.2fr]">
           <div>
             <Reveal>
-              <Eyebrow className="text-bronze-500">Global Presence</Eyebrow>
+              <Eyebrow className="text-bronze-500">Trusted Partnerships</Eyebrow>
             </Reveal>
             <Reveal delay={0.08}>
               <Heading className="mt-6 text-void-950">
-                Different cities. One standard of restraint.
+                Different interiors. One standard of material restraint.
               </Heading>
             </Reveal>
           </div>

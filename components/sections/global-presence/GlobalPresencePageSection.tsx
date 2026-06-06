@@ -17,17 +17,18 @@ export function GlobalPresencePageSection({
       <Container>
         <div className="max-w-4xl">
           <Reveal>
-            <Eyebrow className="text-bronze-500">Global Presence</Eyebrow>
+            <Eyebrow className="text-bronze-500">Trusted Partnerships</Eyebrow>
           </Reveal>
           <Reveal delay={0.08}>
             <Heading as="h1" variant="title" className="mt-6 text-void-950">
-              Luxury property experiences shaped for the atmosphere of each city.
+              Restorations shaped for homes, hotels, workspaces, and designers.
             </Heading>
           </Reveal>
           <Reveal delay={0.16}>
             <p className="mt-8 max-w-2xl text-fluid-lead leading-9 text-stone-700">
-              ORYN adapts its digital language to each market without losing the
-              quiet standard of architectural restraint.
+              SS Interior brings the same material discipline to a private sofa,
+              a hotel lounge, a restaurant banquette, or an executive reception
+              suite.
             </p>
           </Reveal>
         </div>

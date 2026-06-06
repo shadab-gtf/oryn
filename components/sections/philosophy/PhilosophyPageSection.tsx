@@ -3,32 +3,32 @@ import { PhilosophyScrollDirector } from "@/components/sections/philosophy/Philo
 const CHAPTERS = [
   {
     id: "01",
-    label: "ESSENCE",
-    title: "Stripping away the unnecessary to reveal what truly matters.",
+    label: "RESPECT",
+    title: "Respect the original before imagining the transformation.",
     media: "/images/phil_essence.png"
   },
   {
     id: "02",
-    label: "BELIEF",
-    title: "Spaces have the power to shape the way we live.",
+    label: "PRESERVE",
+    title: "Restore, do not replace, when memory still has a structure.",
     media: "/images/phil_belief.png"
   },
   {
     id: "03",
-    label: "APPROACH",
-    title: "Collaborative, curious, and crafted with precision.",
+    label: "CRAFT",
+    title: "Craftsmanship matters because the hand leaves a quiet signature.",
     media: "/images/phil_approach.png"
   },
   {
     id: "04",
-    label: "HARMONY",
-    title: "Balancing function with beauty, people with place.",
+    label: "MATERIAL",
+    title: "Materials define quality before a room ever speaks.",
     media: "/images/phil_harmony.png"
   },
   {
     id: "05",
-    label: "LEGACY",
-    title: "Creating timeless impact that lives on.",
+    label: "DETAIL",
+    title: "Luxury lives in details most people feel before they see.",
     media: "/images/phil_legacy.png"
   }
 ] as const;
@@ -71,12 +71,12 @@ export function PhilosophyPageSection() {
               Our Philosophy
             </div>
             <h2 className="text-[clamp(2rem,6vw,5rem)] leading-[1.1] md:leading-[0.9] font-heading uppercase tracking-tight mb-8 md:mb-12">
-              <span className="block overflow-hidden pb-1 md:pb-2"><span className="block" data-phil-title>We Design</span></span>
-              <span className="block overflow-hidden pb-1 md:pb-2"><span className="block text-white/40" data-phil-title>For Human</span></span>
-              <span className="block overflow-hidden pb-1 md:pb-2"><span className="block" data-phil-title>Experience.</span></span>
+              <span className="block overflow-hidden pb-1 md:pb-2"><span className="block" data-phil-title>We Restore</span></span>
+              <span className="block overflow-hidden pb-1 md:pb-2"><span className="block text-white/40" data-phil-title>What Time</span></span>
+              <span className="block overflow-hidden pb-1 md:pb-2"><span className="block" data-phil-title>Has Touched.</span></span>
             </h2>
             <p className="max-w-sm text-xs md:text-sm leading-relaxed text-white/50 pr-4 md:pr-0" data-phil-desc>
-              At ORYN, we believe architecture is not the creation of form, but the creation of feeling. Every project begins with a deep understanding of human emotion, purpose, and the context of place.
+              At SS Interior, restoration begins with restraint. We study the piece, its material, its history, and its place in the room before deciding how it should return.
             </p>
           </div>
 

@@ -22,7 +22,7 @@ export default function ShowcaseError({
     <main className="min-h-screen bg-void-950 pt-32 text-ivory-050">
       <Container size="intimate">
         <Heading as="h1" variant="title">
-          The showcase could not be prepared.
+          The transformation gallery could not be prepared.
         </Heading>
         <Button className="mt-8" type="button" onClick={unstable_retry}>
           Request again

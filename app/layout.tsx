@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
-import { CookieConsent } from "@/components/consent/CookieConsent";
 import { PageTransition } from "@/components/motion/PageTransition";
 import { MotionProvider } from "@/components/motion/MotionProvider";
 import { GodLevelLoader } from "@/components/motion/GodLevelLoader";
@@ -19,11 +18,18 @@ const ramillas = localFont({
   display: "swap",
 });
 
-export const metadata: Metadata = buildMetadata({
-  title: "ORYN | Cinematic Luxury Real Estate Experiences",
-  description:
-    "Cinematic digital experiences for luxury real estate, architecture, and private spatial brands.",
-});
+export const metadata: Metadata = {
+  ...buildMetadata({
+    title: "SS Interior | Luxury Furniture Restoration Atelier",
+    description:
+      "Luxury furniture restoration, bespoke upholstery, leather renewal, and heritage sofa transformation for refined homes, hotels, and interior designers.",
+  }),
+  icons: {
+    icon: "/new-logo.png",
+    shortcut: "/new-logo.png",
+    apple: "/new-logo.png",
+  },
+};
 
 export default function RootLayout({
   children,
@@ -32,7 +38,35 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={cn("h-full antialiased", ramillas.variable)} suppressHydrationWarning>
-      <body className="flex min-h-full flex-col bg-[#0a0a0a]" suppressHydrationWarning>
+      <body className="flex min-h-full flex-col bg-[#0B0B0B]" suppressHydrationWarning>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+(() => {
+  const cleanupKey = "ss-interior-sw-cleaned";
+
+  async function cleanupLegacyServiceWorkers() {
+    if (!("serviceWorker" in navigator)) return;
+
+    const registrations = await navigator.serviceWorker.getRegistrations();
+    const cachesKeys = "caches" in window ? await caches.keys() : [];
+
+    await Promise.all([
+      ...registrations.map((registration) => registration.unregister()),
+      ...cachesKeys.map((key) => caches.delete(key)),
+    ]);
+
+    if (!sessionStorage.getItem(cleanupKey) && (registrations.length || cachesKeys.length)) {
+      sessionStorage.setItem(cleanupKey, "true");
+      window.location.reload();
+    }
+  }
+
+  cleanupLegacyServiceWorkers().catch(() => {});
+})();
+            `,
+          }}
+        />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -45,7 +79,6 @@ export default function RootLayout({
           <PageTransition />
           <main className="flex-1">{children}</main>
           <SiteFooter />
-          <CookieConsent />
         </MotionProvider>
       </body>
     </html>

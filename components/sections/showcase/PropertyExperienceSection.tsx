@@ -79,7 +79,7 @@ export function PropertyExperienceSection({
           </div>
           <Reveal delay={0.16}>
             <Button href="/private-inquiry" className="mt-16">
-              Request a private preview
+              Request a restoration consultation
             </Button>
           </Reveal>
         </Container>

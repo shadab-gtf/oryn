@@ -10,15 +10,15 @@ export default function NotFound() {
           Not Found
         </p>
         <Heading as="h1" variant="title" className="mt-6">
-          This room is not part of the current experience.
+          This atelier page is not part of the current collection.
         </Heading>
         <p className="mt-6 text-base leading-8 text-ivory-050/70">
-          Return to the curated showcase or begin a private inquiry.
+          Return to the transformation gallery or request a restoration consultation.
         </p>
         <div className="mt-8 flex flex-col gap-4 sm:flex-row">
-          <Button href="/showcase">View the showcase</Button>
+          <Button href="/showcase">View transformations</Button>
           <Button href="/private-inquiry" variant="secondary">
-            Private inquiry
+            Restoration consultation
           </Button>
         </div>
       </Container>

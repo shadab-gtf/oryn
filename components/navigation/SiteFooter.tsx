@@ -2,7 +2,7 @@
 
 import { useRef } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
-import { OrynLogo } from "@/components/brand/OrynLogo";
+import { SSInteriorLogo } from "@/components/brand/SSInteriorLogo";
 import { Reveal } from "@/components/motion/Reveal";
 import { TransitionLink } from "@/components/motion/TransitionLink";
 import { Container } from "@/components/ui/Container";
@@ -32,26 +32,46 @@ export function SiteFooter() {
               href="/"
               className="inline-flex text-ivory-050 transition-colors duration-300 hover:text-bronze-300"
             >
-              <OrynLogo className="w-36" />
+              <SSInteriorLogo className="h-24" />
             </TransitionLink>
             <p className="mt-6 max-w-xl text-sm leading-7 text-ivory-050/62">
-              Cinematic digital experiences for luxury real estate, architecture,
-              and private spatial brands. Discretion, atmosphere, and architectural
-              clarity guide every project.
+              A luxury furniture restoration and bespoke upholstery atelier
+              preserving exceptional sofas, seating, materials, and the stories
+              held within them.
             </p>
+            <div className="mt-6 grid gap-2 text-sm text-ivory-050/70">
+              <a href="tel:+919205374846" className="hover:text-bronze-300">
+                +91 92053 74846
+              </a>
+              <a href="https://wa.me/919205374846" className="hover:text-bronze-300">
+                WhatsApp +91 92053 74846
+              </a>
+              <a href="mailto:saifboby128@gmail.com" className="hover:text-bronze-300">
+                saifboby128@gmail.com
+              </a>
+            </div>
           </div>
           <div className="grid gap-4 text-sm text-ivory-050/70 sm:grid-cols-2">
             <TransitionLink href="/showcase" className="hover:text-bronze-300">
-              Showcase
+              Transformation Gallery
             </TransitionLink>
-            <TransitionLink href="/philosophy" className="hover:text-bronze-300">
-              Philosophy
+            <TransitionLink href="/services/sofa-restoration" className="hover:text-bronze-300">
+              Sofa Restoration
+            </TransitionLink>
+            <TransitionLink href="/material-collection" className="hover:text-bronze-300">
+              Material Collection
+            </TransitionLink>
+            <TransitionLink href="/restoration-process" className="hover:text-bronze-300">
+              Restoration Process
+            </TransitionLink>
+            <TransitionLink href="/our-craft" className="hover:text-bronze-300">
+              Our Craft
             </TransitionLink>
             <TransitionLink href="/journal" className="hover:text-bronze-300">
               Journal
             </TransitionLink>
             <TransitionLink href="/private-inquiry" className="hover:text-bronze-300">
-              Private Inquiry
+              Restoration Consultation
             </TransitionLink>
           </div>
         </Container>

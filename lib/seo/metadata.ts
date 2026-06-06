@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import type { SeoConfig } from "@/types/seo";
 
-const siteUrl = "https://oryn.studio";
+const siteUrl = "https://ssinterior.com";
 const defaultImage = "/og-image.jpg";
 
 export function buildMetadata(config: SeoConfig): Metadata {
@@ -20,13 +20,13 @@ export function buildMetadata(config: SeoConfig): Metadata {
       title: config.title,
       description: config.description,
       url,
-      siteName: "ORYN",
+      siteName: "SS Interior",
       images: [
         {
           url: image,
           width: 1200,
           height: 630,
-          alt: "ORYN cinematic luxury real estate experience",
+          alt: "SS Interior luxury furniture restoration and bespoke upholstery atelier",
         },
       ],
       locale: "en_US",

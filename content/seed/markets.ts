@@ -2,59 +2,59 @@ import type { Market } from "@/types/content";
 
 export const markets: Market[] = [
   {
-    slug: "dubai",
-    name: "Dubai",
-    region: "United Arab Emirates",
+    slug: "luxury-homes",
+    name: "Luxury Homes",
+    region: "Private Homes",
     description:
-      "Vertical ambition structured by absolute privacy. A market that demands monumental cinematic presentation over conventional property metrics.",
+      "For homes where furniture is part of family memory, SS Interior restores comfort, material dignity, and the quiet presence of a room.",
   },
   {
-    slug: "monaco",
-    name: "Monaco",
-    region: "French Riviera",
+    slug: "villas",
+    name: "Villas",
+    region: "Private Estates",
     description:
-      "Waterfront scarcity and elite discretion. The digital atmosphere here must echo the soft, measured theatre of Mediterranean light.",
+      "Large-scale living environments require proportion, durability, and upholstery choices that feel calm across generous interiors.",
   },
   {
-    slug: "london",
-    name: "London",
-    region: "United Kingdom",
+    slug: "hotels",
+    name: "Hotels",
+    region: "Hospitality",
     description:
-      "Heritage combined with severe contemporary restraint. A discerning market that requires an editorial, almost silent digital footprint.",
+      "Suites, lounges, and lobbies benefit from restoration that preserves atmosphere while supporting the daily rhythm of hospitality.",
   },
   {
-    slug: "los-angeles",
-    name: "Los Angeles",
-    region: "United States",
+    slug: "restaurants",
+    name: "Restaurants",
+    region: "Dining Environments",
     description:
-      "Modern estates defined by horizon lines. Digital ecosystems must frame the property as a seamless extension of the surrounding landscape.",
+      "Banquettes, lounge seating, and dining pieces are renewed with materials selected for touch, endurance, and a refined guest impression.",
   },
   {
-    slug: "shanghai",
-    name: "Shanghai",
-    region: "China",
+    slug: "corporate-offices",
+    name: "Corporate Offices",
+    region: "Executive Spaces",
     description:
-      "High-density luxury and cultural precision. The digital narrative must reflect absolute sophistication and vertical dominance.",
+      "Reception seating and executive lounges are restored with a restrained authority that supports trust before a word is spoken.",
   },
   {
-    slug: "new-york",
-    name: "New York",
-    region: "United States",
+    slug: "interior-designers",
+    name: "Interior Designers",
+    region: "Design Partnerships",
     description:
-      "A city of unrelenting noise, requiring penthouses and sky residences to be presented as private, silent digital sanctuaries.",
+      "SS Interior works as a discreet craft partner for designers who need material fluency, careful execution, and a finish worthy of the scheme.",
   },
   {
-    slug: "jeddah",
-    name: "Jeddah",
-    region: "Saudi Arabia",
+    slug: "heritage-pieces",
+    name: "Heritage Pieces",
+    region: "Family Collections",
     description:
-      "Coastal expanses and hospitality-influenced privacy. The digital rhythm must feel ceremonial, slow, and deeply respectful.",
+      "Sentimental furniture is handled with patience, preserving identity while bringing renewed comfort and surface refinement.",
   },
   {
-    slug: "berlin",
-    name: "Berlin",
-    region: "Germany",
+    slug: "designer-furniture",
+    name: "Designer Furniture",
+    region: "Collected Objects",
     description:
-      "Uncompromising architectural intelligence. The market values raw materiality, concrete, shadow, and strict digital governance.",
+      "Recognizable design pieces require restraint, material discipline, and an understanding of original proportion.",
   },
 ];

@@ -13,31 +13,31 @@ type HeroSectionProps = {
 const SLIDES = [
   {
     id: 1,
-    label: "Cinematic Real Estate",
-    headline: ["Architecture", "Composed for", "Stillness"],
-    media: "/videos/hero.mp4", // Will use video
-    cta: "Explore our showcase",
+    label: "Luxury Restoration",
+    headline: ["Furniture", "Deserves a", "Second Life"],
+    media: "/media/ss-hero-atelier-stitching.png",
+    cta: "View transformations",
   },
   {
     id: 2,
-    label: "Urban Sanctuaries",
-    headline: ["Metropolitan", "Vertical", "Refuges"],
-    media: "/images/slider6.png",
-    cta: "View penthouses",
+    label: "Handcrafted Upholstery",
+    headline: ["Where", "Craftsmanship", "Lives On"],
+    media: "/media/ss-velvet-transformation.png",
+    cta: "Explore materials",
   },
   {
     id: 3,
-    label: "Desert Oasis",
-    headline: ["Brutalist", "Harmony with", "Nature"],
-    media: "/images/slider5.png",
-    cta: "Discover estates",
+    label: "Material Atelier",
+    headline: ["Leather", "Velvet and", "Memory"],
+    media: "/media/ss-material-collection.png",
+    cta: "See the process",
   },
   {
     id: 4,
-    label: "Private Estates",
-    headline: ["Secluded", "Atmospheric", "Domains"],
-    media: "/images/slider4.png",
-    cta: "Begin inquiry",
+    label: "Private Consultation",
+    headline: ["Restoring", "Luxury with", "Restraint"],
+    media: "/media/ss-chesterfield-revival.png",
+    cta: "Begin consultation",
   },
 ];
 
@@ -61,7 +61,7 @@ export function HeroSection({ content }: HeroSectionProps) {
           >
             {/* Media Layer */}
             <div className="absolute inset-0 w-full h-full" data-slide-media>
-              {index === 0 ? (
+              {index === 0 && content.media.src.endsWith(".mp4") ? (
                 <video
                   src={content.media.src}
                   autoPlay
@@ -72,8 +72,8 @@ export function HeroSection({ content }: HeroSectionProps) {
                 />
               ) : (
                 <img
-                  src={slide.media}
-                  alt={slide.label}
+                  src={index === 0 ? content.media.src : slide.media}
+                  alt={`${slide.label} furniture restoration scene`}
                   className="absolute inset-0 h-full w-full object-cover"
                 />
               )}
@@ -114,7 +114,7 @@ export function HeroSection({ content }: HeroSectionProps) {
                   >
                     <Button
                       href={index === 3 ? content.secondaryCta.href : content.primaryCta.href}
-                      className="min-w-[180px] bg-transparent border-ivory-050/30 text-white hover:bg-ivory-050 hover:text-white transition-all duration-500"
+                      className="min-w-[180px] bg-transparent border-ivory-050/30 text-white hover:bg-bronze-300 hover:text-void-950 transition-all duration-500"
                     >
                       {slide.cta}
                     </Button>

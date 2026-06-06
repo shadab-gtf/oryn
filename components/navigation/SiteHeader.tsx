@@ -2,17 +2,17 @@
 
 import { useState } from "react";
 import { usePathname } from "next/navigation";
-import { OrynLogo } from "@/components/brand/OrynLogo";
+import { SSInteriorLogo } from "@/components/brand/SSInteriorLogo";
 import { TransitionLink } from "@/components/motion/TransitionLink";
 import { Container } from "@/components/ui/Container";
 import { NavigationOverlay } from "./NavigationOverlay";
 import { cn } from "@/lib/utils/cn";
 
 const navItems = [
-  { href: "/showcase", label: "Showcase" },
-  { href: "/philosophy", label: "Philosophy" },
-  { href: "/journal", label: "Journal" },
-  { href: "/global-presence", label: "Global Presence" },
+  { href: "/services/sofa-restoration", label: "Services" },
+  { href: "/restoration-gallery", label: "Gallery" },
+  { href: "/material-collection", label: "Materials" },
+  { href: "/restoration-process", label: "Process" },
 ] as const;
 
 export function SiteHeader() {
@@ -52,9 +52,9 @@ export function SiteHeader() {
             <TransitionLink
               href="/"
               className="text-ivory-050 transition-colors duration-300 hover:text-bronze-300"
-              ariaLabel="ORYN home"
+              ariaLabel="SS Interior home"
             >
-              <OrynLogo className="w-24 sm:w-28" />
+              <SSInteriorLogo className="h-12 sm:h-14" />
             </TransitionLink>
           </div>
 
@@ -107,11 +107,11 @@ export function SiteHeader() {
               <TransitionLink
                 href="/private-inquiry"
                 className="group flex items-center gap-2 text-[10px] tracking-[0.2em] font-sans font-medium uppercase text-bronze-300 transition-colors hover:text-ivory-050"
-                ariaLabel="Private inquiry"
+                ariaLabel="Restoration consultation"
               >
                 <span className="relative overflow-hidden flex items-center h-4">
-                  <span className="block transition-transform duration-500 group-hover:-translate-y-full">Inquiry</span>
-                  <span className="block absolute inset-0 translate-y-full transition-transform duration-500 group-hover:translate-y-0">Inquiry</span>
+                  <span className="block transition-transform duration-500 group-hover:-translate-y-full">Consult</span>
+                  <span className="block absolute inset-0 translate-y-full transition-transform duration-500 group-hover:translate-y-0">Consult</span>
                 </span>
                 <span className="w-1.5 h-1.5 rounded-full bg-bronze-300/60 group-hover:bg-ivory-050/80 transition-colors duration-500 shadow-[0_0_8px_rgba(205,194,182,0.4)]" />
               </TransitionLink>

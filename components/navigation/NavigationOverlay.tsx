@@ -3,7 +3,7 @@
 import { useEffect, useRef } from "react";
 import Image from "next/image";
 import gsap from "gsap";
-import { OrynLogo } from "@/components/brand/OrynLogo";
+import { SSInteriorLogo } from "@/components/brand/SSInteriorLogo";
 import { TransitionLink } from "@/components/motion/TransitionLink";
 import { cn } from "@/lib/utils/cn";
 
@@ -121,7 +121,7 @@ export function NavigationOverlay({ isOpen, onClose, items }: NavigationOverlayP
         <div className="flex items-center justify-between">
           <div className="left-content opacity-0">
             <span className="text-[10px] tracking-[0.2em] text-ivory-050/40 uppercase">
-              Oryn Identity System
+              SS Interior Atelier
             </span>
           </div>
           
@@ -154,38 +154,25 @@ export function NavigationOverlay({ isOpen, onClose, items }: NavigationOverlayP
           <div className="flex flex-col justify-between h-full py-4 border-b border-ivory-050/10 md:border-b-0 md:border-r md:border-ivory-050/10 pr-6 lg:pr-12">
             <div className="left-content opacity-0 mb-8 md:mb-12">
               <TransitionLink href="/" onNavigate={onClose}>
-                <OrynLogo className="w-36 text-bronze-300" variant="full" />
+                <SSInteriorLogo className="h-24" variant="full" />
               </TransitionLink>
             </div>
             
             <div className="space-y-8 mt-auto">
-              <div className="left-content opacity-0">
-                <h3 className="text-[10px] tracking-[0.25em] text-bronze-300 uppercase font-sans font-medium mb-3">
-                  Residential Acquisitions
-                </h3>
-                <p className="font-heading text-lg font-light text-ivory-050">
-                  Marcus Vance
-                </p>
-                <p className="text-sm text-ivory-050/50 mt-1 hover:text-bronze-300 transition-colors duration-200">
-                  <a href="tel:+97143982200">+971 4 398 2200</a>
-                </p>
-                <p className="text-sm text-ivory-050/50 hover:text-bronze-300 transition-colors duration-200">
-                  <a href="mailto:vance@oryn.com">vance@oryn.com</a>
-                </p>
-              </div>
+              
 
               <div className="left-content opacity-0">
                 <h3 className="text-[10px] tracking-[0.25em] text-bronze-300 uppercase font-sans font-medium mb-3">
-                  Commercial & Developments
+                  Hospitality & Designers
                 </h3>
                 <p className="font-heading text-lg font-light text-ivory-050">
-                  Elena Rostova
+                  Get in touch for project inquiries, collaborations, or to discuss how we can bring your vision to life. We look forward to connecting with you.
                 </p>
                 <p className="text-sm text-ivory-050/50 mt-1 hover:text-bronze-300 transition-colors duration-200">
-                  <a href="tel:+37251913222">+372 5191 3222</a>
+                  <a href="https://wa.me/919205374846">WhatsApp +91 92053 74846</a>
                 </p>
                 <p className="text-sm text-ivory-050/50 hover:text-bronze-300 transition-colors duration-200">
-                  <a href="mailto:rostova@oryn.com">rostova@oryn.com</a>
+                  <a href="mailto:saifboby128@gmail.com">saifboby128@gmail.com</a>
                 </p>
               </div>
             </div>
@@ -195,8 +182,8 @@ export function NavigationOverlay({ isOpen, onClose, items }: NavigationOverlayP
           <div className="hidden md:flex justify-center items-center h-full">
             <div className="center-image-wrapper w-full aspect-[3/4] max-w-[280px] lg:max-w-[320px] overflow-hidden rounded-[24px] border border-ivory-050/10 bg-charcoal-900/40 relative">
               <Image
-                src="/media/home-detail.jpg"
-                alt="Architectural material language"
+                src="/media/ss-material-collection.png"
+                alt="Luxury upholstery material collection"
                 fill
                 sizes="(max-width: 768px) 100vw, 300px"
                 className="object-cover opacity-90 transition-transform duration-[2s] hover:scale-105"
@@ -228,49 +215,49 @@ export function NavigationOverlay({ isOpen, onClose, items }: NavigationOverlayP
               <div className="space-y-3">
                 <div className="sub-link opacity-0">
                   <TransitionLink
-                    href="/philosophy"
+                    href="/material-collection"
                     onNavigate={onClose}
                     className="text-[10px] tracking-[0.2em] uppercase font-sans font-medium text-ivory-050/40 hover:text-bronze-300 transition-colors duration-200"
                   >
-                    For Investors
+                    Material Library
                   </TransitionLink>
                 </div>
                 <div className="sub-link opacity-0">
                   <TransitionLink
-                    href="/philosophy"
+                    href="/our-craft"
                     onNavigate={onClose}
                     className="text-[10px] tracking-[0.2em] uppercase font-sans font-medium text-ivory-050/40 hover:text-bronze-300 transition-colors duration-200"
                   >
-                    Our Team
+                    Our Atelier
                   </TransitionLink>
                 </div>
                 <div className="sub-link opacity-0">
                   <TransitionLink
-                    href="/philosophy"
+                    href="/journal"
                     onNavigate={onClose}
                     className="text-[10px] tracking-[0.2em] uppercase font-sans font-medium text-ivory-050/40 hover:text-bronze-300 transition-colors duration-200"
                   >
-                    Oryn Studio
+                    Care Guidance
                   </TransitionLink>
                 </div>
               </div>
               <div className="space-y-3">
                 <div className="sub-link opacity-0">
                   <TransitionLink
-                    href="/showcase"
+                    href="/client-stories"
                     onNavigate={onClose}
                     className="text-[10px] tracking-[0.2em] uppercase font-sans font-medium text-ivory-050/40 hover:text-bronze-300 transition-colors duration-200"
                   >
-                    Construction Updates
+                    Transformation Notes
                   </TransitionLink>
                 </div>
                 <div className="sub-link opacity-0">
                   <TransitionLink
-                    href="/private-inquiry"
+                    href="/restoration-process"
                     onNavigate={onClose}
                     className="text-[10px] tracking-[0.2em] uppercase font-sans font-medium text-ivory-050/40 hover:text-bronze-300 transition-colors duration-200"
                   >
-                    Acquisition Process
+                    Consultation Process
                   </TransitionLink>
                 </div>
               </div>
@@ -280,7 +267,7 @@ export function NavigationOverlay({ isOpen, onClose, items }: NavigationOverlayP
 
         {/* Bottom copyright/legal row */}
         <div className="flex flex-col sm:flex-row items-center justify-between border-t border-ivory-050/10 pt-6 text-[10px] tracking-[0.15em] text-ivory-050/30 uppercase mt-4">
-          <p>© 2026 ORYN. All rights reserved.</p>
+          <p>© 2026 SS Interior. All rights reserved.</p>
           <div className="flex space-x-6 mt-2 sm:mt-0">
             <a href="#" className="hover:text-bronze-300 transition-colors duration-200">Privacy</a>
             <a href="#" className="hover:text-bronze-300 transition-colors duration-200">Terms</a>

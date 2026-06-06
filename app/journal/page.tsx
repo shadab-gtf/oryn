@@ -9,9 +9,9 @@ import { getJournalArticles } from "@/lib/api/home";
 import { buildMetadata } from "@/lib/seo/metadata";
 
 export const metadata: Metadata = buildMetadata({
-  title: "Journal | ORYN Luxury Real Estate Editorials",
+  title: "Journal | SS Interior Craft & Materials",
   description:
-    "Editorial notes on cinematic property storytelling, architectural UX, and luxury real estate digital experiences.",
+    "Editorial notes on heritage furniture restoration, luxury upholstery materials, leather care, and refined interior craftsmanship.",
   path: "/journal",
 });
 
@@ -26,7 +26,7 @@ export default async function JournalPage() {
         </Reveal>
         <Reveal delay={0.08}>
           <Heading as="h1" variant="title" className="mt-6 text-void-950">
-            Notes on architectural attention, cinematic property, and quiet digital luxury.
+            Notes on heritage, upholstery materials, and the quiet art of furniture transformation.
           </Heading>
         </Reveal>
         <div className="mt-16 grid gap-8 lg:grid-cols-2">
